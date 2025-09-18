@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro Hotel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="modal">
+    <div class="modal-header">
+      <h2>REGISTRO HOTEL</h2>
+      <button class="close-btn" onclick="alert('Cerrar ventana')">✕</button>
+    </div>
+
+    <form id="hotelForm">
+      <label>
+        <span>Identificación:</span>
+        <input type="text" name="identificacion">
+      </label>
+
+      <label>
+        <span>Nombres:</span>
+        <input type="text" name="nombres">
+      </label>
+
+      <label>
+        <span>Apellidos:</span>
+        <input type="text" name="apellidos">
+      </label>
+
+      <label>
+        <span>Teléfono:</span>
+        <input type="text" name="telefono">
+      </label>
+
+      <label>
+        <span>Habitación:</span>
+        <input type="text" name="habitacion">
+      </label>
+
+      <label>
+        <span>RH:</span>
+        <select name="rh">
+          <option value="">--</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+        </select>
+      </label>
+
+      <div class="dates-row">
+        <label>
+          <span>Fecha Ingreso:</span>
+          <input type="date" name="fechaIngreso">
+        </label>
+
+        <label>
+          <span>Fecha Salida:</span>
+          <input type="date" name="fechaSalida">
+        </label>
+      </div>
+
+      <div class="nav-arrows">
+        <button type="button" class="arrow" onclick="alert('Flecha izquierda')">←</button>
+        <button type="button" class="arrow" onclick="alert('Flecha derecha')">→</button>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="btn register">Registrar</button>
+        <button type="button" class="btn cancel" onclick="alert('Operación cancelada')">Cancelar</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
